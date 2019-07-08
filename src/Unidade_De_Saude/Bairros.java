@@ -77,6 +77,8 @@ public class Bairros {
     bairro [6][6] = 5;
     bairro [6][7] = 8;
     
+    System.out.println("Problema da Unidade de Sáude\nMapa dos bairros[Frequência de chamadas de Socorro]:\n");
+    
     for (int i=0;i<bairro.length; i++ ){
             //System.out.println(bairro[i]+" ");
             for (int j=0; j<bairro[i].length ;j++){ //for alinhado
