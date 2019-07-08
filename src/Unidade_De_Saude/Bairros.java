@@ -12,7 +12,7 @@ package Unidade_De_Saude;
 public class Bairros {
     public static void main(String[] args){
     int [][] bairro = new int [7][8];
-    
+    //     x , y  >>  w       x,y(coordenadas)      e w(número de chamadas)
     //primeria linha
     bairro [0][0] = 7;
     bairro [0][1] = 5;
