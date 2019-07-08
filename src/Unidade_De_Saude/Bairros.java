@@ -76,6 +76,15 @@ public class Bairros {
     bairro [6][5] = 8;
     bairro [6][6] = 5;
     bairro [6][7] = 8;
+    
+    for (int i=0;i<bairro.length; i++ ){
+            //System.out.println(bairro[i]+" ");
+            for (int j=0; j<bairro[i].length ;j++){ //for alinhado
+                System.out.print(bairro[i][j]+"  ");
+            }
+            System.out.println();
+        }
+    
     }
     
 }
