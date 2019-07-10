@@ -16,7 +16,7 @@ import util.AlgGenetico;
 
 /**
  *
- * @author usuario.local
+ * @author HeiThor
  */
 public class MainApp extends Application {
     private MainController mainController;
