@@ -230,8 +230,7 @@ public class AlgGenetico {
         }
         
         return novaPopulacao;
-    }
-    
+    }    
     private void geraPopulacao() {
         //Gera a população aleatoriamente de acordo com o tamanho máximo definido
         for (int i = 0; i < tamanhoPopulacao; i++) {

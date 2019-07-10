@@ -38,5 +38,4 @@ public class MainApp extends Application {
         primaryStage.setScene(cena);
         primaryStage.show();
     }
-    
 }
