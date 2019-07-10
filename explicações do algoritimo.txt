@@ -1,0 +1,38 @@
+o programa define a população inicial, a taxa de cruzamento, a taxa de mutação e quantidade de gerações que o algoritmo vai rodar.
+
+Depois clica em executar algoritmo. Depois de finalizado a execução, no lado direito vai mostrar os valores relativos ao melhor encontrado.
+
+não tem tratamento de exceções. Só use números inteiros na população inicial e em gerações.
+
+Taxa de cruzamento e taxa de mutação pode usar vírgula caso queira usar uma taxa com casa decimal.
+
+coisas q luciano vai perguntar:  onde você está armazenando os valores gerados aleatoriamente.
+---------------------------------
+
+Primeiro, são gerados n indivíduos aleatórios dentro do intervalo permitido (para x = 0 a 7, para y = 0 a 6)
+
+o valor de n é definido na janela inicial no campo população inicial
+
+Depois ordenei os indivíduos gerados por ordem de aptidão, do menor para o maior e armazenei aquele com o menor valor que é a melhor aptidão.
+
+Depois selecionei indivíduos para o cruzamento da população que foi gerada aleatoriamente. A quantidade selecionada foi (2 * população inicial) - 2.
+
+O método de seleção que utilizei foi o método do torneio. Selecionei 3 indivíduos aleatoriamente. Dos três eu faço um teste se vou escolher aquele com melhor aptidão ou aquele com pior aptidão (60% de chances para o melhor e 40% para o pior), nem sempre descartar os indivíduos com pior aptidão pois podem ter características importantes a serem guardadas. (No caderno Luciano não faz este teste, ele sempre escolhe o melhor)
+
+Depois faço o teste de cruzamento. Caso haja o cruzamento, eu uso o mesmo método do caderno, o blend crossover e uso o alfa variando de -0.25 a 1.25
+
+Caso não seja feito o cruzamento eu escolho um dos pais aleatoriamente e envio ele para a próxima geração.
+
+Depois faço o teste de mutação em cada um dos valores do indivíduo, x e y. Caso haja a mutação eu troco o valor antigo por um novo escolhido aleatoriamente, respeitando os intervalos definidos (x 0 a 7 e y 0 a 6)
+
+método de mutaçãouniforme.
+
+Depois da mutação eu adiciono o melhor indivíduo da população anterior nesta nova população e ordeno ela de acordo com o valor de aptidão (menor para o maior)
+
+A partir deste ponto o algoritmo vai repetir até ser executado pela quantidade de vezes que foi definido no início.
+
+Todos os testes básicos funcionaram. Geração aleatória, seleção, cruzamento e mutação.
+
+Aquele 2 km da distância eu multiplique na função objetivo no valor de y
+
+No caso de x, como o quadrado representa 1 km eu mantive o valor. No caso de y eu multipliquei pelo valor encontrado.

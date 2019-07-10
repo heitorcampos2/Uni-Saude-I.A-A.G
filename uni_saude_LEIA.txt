@@ -1,0 +1,25 @@
+Explicações do problema:
+a matriz é uma array de 56 posições 
+sendo os valores nela de x, y(coordenadas[indice]) e w(freq de chamada de socorro do bairro)
+
+-------
+gerar valores aleatorios (escolher um indice, podendo ser valor não 
+inteiro, tipo, no caso a unidade de saude pode estar entre dois bairros por exemplo.
+
+-----------
+jogar esses valores na fun. objetivo 
+que deve fazer o somatorio de: (indices/bairro - coordenada[valor gerado aleatorio])^2 [isso dentro da raiz] *multiplicado pela freq. de chamada
+[fazer duas vezes, um para x e um para y]
+
+------
+fazer a seleção dos individuos
+dentro de um for, dentro da func objetivo
+que é a aptidão
+(pai ...filho etc...)
+
+----
+fazer o cruzamento (caderno)
+
+--
+fazer a mutação (caderno)
+
